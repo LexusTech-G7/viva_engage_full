@@ -187,6 +187,3 @@ flutter run
   * **Người thực hiện**: LexusTech G7
 
 <!-- end list -->
-
-```
-```
