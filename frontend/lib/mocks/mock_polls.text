@@ -1,0 +1,14 @@
+import '../models/poll.dart';
+
+final pollSample = Poll(
+  postId: 1006,
+  title: 'Switch to 21/21 roster?',
+  endAt: DateTime.now().add(const Duration(days: 2)),
+  options: [
+    PollOption(id: 1, text: 'Yes', votes: 3),
+    PollOption(id: 2, text: 'No', votes: 1),
+    PollOption(id: 3, text: 'Undecided', votes: 2),
+  ],
+);
+
+final Map<int, Poll> mockPolls = {pollSample.postId: pollSample};

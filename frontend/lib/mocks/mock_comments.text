@@ -1,0 +1,18 @@
+import '../models/comment.dart';
+
+final List<Comment> mockComments = [
+  Comment(
+    id: 2001,
+    postId: 1001,
+    author: 'Hoa Le',
+    text: 'Đã log vào CMMS, đặt phụ tùng rồi nha.',
+    createdAt: DateTime.now().subtract(const Duration(hours: 1)),
+  ),
+  Comment(
+    id: 2002,
+    postId: 1001,
+    author: 'Minh Duc',
+    text: 'Theo dõi áp suất mỗi giờ và cập nhật nhé!',
+    createdAt: DateTime.now().subtract(const Duration(minutes: 50)),
+  ),
+];

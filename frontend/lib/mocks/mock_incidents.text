@@ -1,0 +1,36 @@
+import '../models/incident.dart';
+
+final mockIncidents = <int, IncidentDetail>{
+  1007:IncidentDetail(
+    postId: 1007,
+    severity: 'high',
+    status: 'closed',
+    closedBy: 'Nguyen Van A',
+    closedAt: '2025-07-16 22:30',
+    secondsToClose: 13600,
+  ),
+  1004: IncidentDetail(
+    postId: 1004,
+    severity: 'High',
+    status: 'closed',
+    closedBy: 'Kỹ sư A',
+    closedAt: '2025-07-16 10:30',
+    secondsToClose: 5400,
+  ),
+  1005: IncidentDetail(
+    postId: 1005,
+    severity: 'high',
+    status: 'closed',
+    closedBy: 'Alice Nguyen',
+    closedAt: '2024-12-02 15:23',
+    secondsToClose: 3600,
+  ),
+  1010: IncidentDetail(
+    postId: 1010,
+    severity: 'low',
+    status: 'open',
+    closedBy: 'Admin',
+    closedAt: '',
+    secondsToClose: 0,
+  ),
+};

@@ -1,0 +1,37 @@
+class NotificationItem {
+  final int id;
+  final String title;
+  final String message;
+  final DateTime createdAt;
+  bool isRead;
+
+  NotificationItem({
+    required this.id,
+    required this.title,
+    required this.message,
+    required this.createdAt,
+    this.isRead = false,
+  });
+}
+
+final List<NotificationItem> mockNotifications = [
+  NotificationItem(
+    id: 1,
+    title: 'New post in Safety',
+    message: 'An incident has been reported near Zone 3.',
+    createdAt: DateTime.now().subtract(const Duration(minutes: 10)),
+  ),
+  NotificationItem(
+    id: 2,
+    title: 'Poll: Company Uniform',
+    message: 'Vote your opinion about the new uniform.',
+    createdAt: DateTime.now().subtract(const Duration(hours: 1)),
+  ),
+  NotificationItem(
+    id: 3,
+    title: 'All Hands Reminder',
+    message: 'Company-wide meeting at 3PM today.',
+    createdAt: DateTime.now().subtract(const Duration(hours: 2)),
+    isRead: true,
+  ),
+];

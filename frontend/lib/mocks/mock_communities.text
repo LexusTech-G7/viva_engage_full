@@ -1,0 +1,21 @@
+class Community {
+  final int id;
+  final String name;
+  final String description;
+  bool   joined;            // ← trạng thái mock
+
+  Community({
+    required this.id,
+    required this.name,
+    required this.description,
+    this.joined = false,
+  });
+}
+
+final List<Community> mockCommunities = [
+  Community(id: 101, name: 'Drilling',    description: 'Rig operations & troubleshooting', joined: true),
+  Community(id: 102, name: 'Safety',      description: 'HSE bulletins and incident alerts', joined: true),
+  Community(id: 103, name: 'Operations',  description: 'Asset uptime & KPIs'),
+  Community(id: 104, name: 'HR',          description: 'Onboarding & employee services'),
+  Community(id: 105, name: 'All-Hands',   description: 'Company-wide announcements', joined: true),
+];

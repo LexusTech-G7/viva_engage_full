@@ -1,0 +1,10 @@
+// lib/utils/role_filter.dart
+import '../models/user.dart';
+
+final Map<UserRole, List<String>> roleCommunityMap = {
+  UserRole.FieldEngineer : ['Drilling'],
+  UserRole.HSESupervisor : ['Safety'],
+  UserRole.OpsManager    : ['Operations', 'Drilling', 'Safety'],
+  UserRole.HRAdmin       : ['HR', 'All-Hands'],
+  UserRole.Admin         : ['Drilling', 'Safety', 'Operations', 'HR', 'All-Hands'],
+};

@@ -1,0 +1,22 @@
+import '../models/user.dart';
+
+final List<User> mockUsers = [
+  User(
+    id: 0,
+    name: 'Linh Admin',
+    email: 'admin@viva.com',
+    role: UserRole.Admin,
+  ),
+  User(
+    id: 1,
+    name: 'An Member',
+    email: 'an@viva.com',
+    role: UserRole.Member,
+  ),
+  User(
+    id: 2,
+    name: 'Bao Guest',
+    email: 'bao@viva.com',
+    role: UserRole.Guest,
+  ),
+];

@@ -1,0 +1,55 @@
+import '../models/post.dart';
+
+final List<Post> mockPosts = [
+  Post(
+    postType: 'feed',
+    id: 1002,
+    title: 'Safety Alert: HOT-WORK permit',
+    body: 'New hot-work rules effective immediately.',
+    author: 'Hoa Le',
+    community: 'Safety',
+    createdAt: DateTime.parse('2025-06-03 08:00'),
+    isPinned: true,
+    viewCount: 120,
+  ),
+  Post(
+    postType: 'feed',
+    id: 1001,
+    title: 'Pump #2 pressure drop',
+    body: 'Observed 500 psi → 320 psi in 15 min.',
+    author: 'An Tran',
+    community: 'Drilling',
+    createdAt: DateTime.parse('2025-06-03 07:30'),
+    viewCount: 15,
+  ),
+  Post(
+    postType: 'poll',
+    id: 1006,
+    title: 'Poll: Next Team Outing?',
+    body: '', // handled by PollWidget
+    author: 'Linh',
+    community: 'All-Hands',
+    createdAt: DateTime.now().subtract(const Duration(hours: 1)),
+    viewCount: 69,
+  ),
+  Post(
+    postType: 'incident',
+    id: 1004,
+    title: 'Lỗi hệ thống máy nén khí',
+    body: '', // handled by IncidentBox
+    author: 'Quản lý',
+    community: 'O&G',
+    createdAt: DateTime.now().subtract(const Duration(minutes: 50)),
+    viewCount: 44,
+  ),
+  Post(
+    postType: 'incident',
+    id: 1007,
+    title: 'Chemical spill near pump station',
+    body: 'Spill reported near pump #2, needs urgent containment.',
+    author: 'Bao Tran',
+    community: 'Operations',
+    createdAt: DateTime.now().subtract(const Duration(minutes: 20)),
+    viewCount: 12,
+  ),
+];
